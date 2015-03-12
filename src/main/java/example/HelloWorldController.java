@@ -12,7 +12,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloWorldController {
     @RequestMapping("/")
     public void test(){
+        int a = 1+2+3;
         System.out.println("test");
+        System.out.println(a);
     }
     @RequestMapping("/hello")
     public ModelAndView helloWorld(){
